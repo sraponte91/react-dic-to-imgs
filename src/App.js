@@ -12,7 +12,7 @@ export default function App() {
 
   const handleDownloadImage = () => {
     const targetEl = downloadRef.current;
-    domtoimage.toJpeg(targetEl, { quality: 0.95 }).then((dataUrl) => {
+    domtoimage.toJpeg(targetEl, { quality: 1 }).then((dataUrl) => {
       let link = document.createElement('a');
       link.download = 'my-image-name.jpeg';
       link.href = dataUrl;
@@ -23,8 +23,7 @@ export default function App() {
   return (
     <div>
       <div className="container" ref={downloadRef}>
-        <h1>Manish Devrani</h1>
-        <p>I Like Coding</p>
+        <img src={"./assets/nyxprofessionalmakeuptintedbrowmascara-tbm04-espresso-color.jpg"} />
       </div>
       <button className="download" onClick={handleDownloadImage}>
         Download

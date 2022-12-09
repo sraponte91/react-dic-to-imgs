@@ -1,7 +1,18 @@
 .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: hotpink;
   text-align: center;
   padding-block: 1rem;
+  width: 1200px;
+  height: 1200px;
+}
+
+.container img {
+  height: 900px;
+  width: auto;
+  max-width: 900px;
 }
 
 .download {
