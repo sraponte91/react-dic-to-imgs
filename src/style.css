@@ -1,0 +1,9 @@
+.container {
+  background-color: hotpink;
+  text-align: center;
+  padding-block: 1rem;
+}
+
+.download {
+  margin-block-start: 2rem;
+}
